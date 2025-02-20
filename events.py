@@ -1,15 +1,13 @@
-from pydantic import BaseModel
-
-from bus import EventTypes
+from bus import EventTypes, BaseEvent
 
 
-class EventA(BaseModel):
+class EventA(BaseEvent):
     type: EventTypes = EventTypes.EVENT_A
     field_1: str
     field_2: int
 
 
-class EventB(BaseModel):
+class EventB(BaseEvent):
     type: EventTypes = EventTypes.EVENT_B
     field_1: str
     field_2: int
