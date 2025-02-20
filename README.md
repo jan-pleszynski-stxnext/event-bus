@@ -2,6 +2,9 @@
 This repository showcases the use of event bus pattern. The pattern is implemented in memory, but if necessary can
 be easily replaced with a message broker like RabbitMQ.
 
+This implementation is not production ready. Also the layout of particular classes and methods should be changed to 
+better match the style of the project.
+
 # Pros and cons 
 
 The advantage of using event bus pattern is that it decouples the components of the system. This allows for easy adding 
